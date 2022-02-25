@@ -11,7 +11,7 @@
     <div class="form-group row">
         <label for="ar_invoice_number" class="col-lg-2 col-form-label">Invoice Number</label>
         <div class="col-lg-4">
-            <input type="text" class="form-control" id="ar_invoice_number" name="invoice_number" placeholder="1483681825" disabled>
+            <input type="text" class="form-control" id="ar_invoice_number" name="invoice_number" placeholder="1483681825" disabled> 
         </div>
         <label for="ar_date" class="col-lg-2 col-form-label">Date<span class="text-danger ml-1">*</span></label>
         <div class="col-lg-4">

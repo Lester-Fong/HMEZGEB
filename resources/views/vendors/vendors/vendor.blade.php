@@ -9,33 +9,32 @@
 
 <div class="wrapper">
 
-<div class="d-sm-flex align-items-start justify-content-between mb-2">
-    <h1 class="h3 mb-0 text-gray-800">Vendors</h1>
-    <!--- card for account payable--->
+    <div class="d-sm-flex align-items-start justify-content-between mb-2">
+        <h1 class="h3 mb-0 text-gray-800">Vendors</h1>
 
-    <div class="col-xl-3 col-md-6 mb-4 border-1">
-        <div class="card border-left-primary shadow h-100 pt-2">
-            <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 text-center">
-                Account Payable 
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="row no-gutters d-flex align-items-center justify-content-around">
-                    <div class="h6 mb-0">
-                    <span class="font-weight-bold text-gray-800">$40,000</span><br>
-                    <small>Active</small>
+        <!--- card for account payable--->
+        <div class="col-xl-3 col-md-6 mb-4 border-1">
+            <div class="card border-left-primary shadow h-100 pt-2">
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 text-center">
+                    Account Payable 
                     </div>
-                    <div class="h6 mb-0">
-                    <span class="font-weight-bold text-danger">$3,500</span><br>
-                    <small>Over Due</small>
+                </div>
+                <div class="card-body">
+                    <div class="row no-gutters d-flex align-items-center justify-content-around">
+                        <div class="h6 mb-0">
+                        <span class="font-weight-bold text-gray-800">Birr 40,000</span><br>
+                        <small>Active</small>
+                        </div>
+                        <div class="h6 mb-0">
+                        <span class="font-weight-bold text-danger">Birr 3,500</span><br>
+                        <small>Over Due</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-</div>
 
     <div class="card shadow mb-4">
         <div class="card-header py-3 d-flex align-items-center  justify-content-between">
@@ -54,64 +53,7 @@
                         <a class="close" data-dismiss="modal">×</a>
                     </div>
                     <form id="contactForm" name="contact" role="form">
-                        <div class="modal-body h6">				
-                            <div class="form-group">
-                                <label for="name">Vendor name:</label>
-                                <input type="text" name="name" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Address:</label>
-                                <input type="text" name="address" class="form-control">
-                            </div>
-                            <div class="row form-group">
-                                <div class="col">
-                                    <label for="email">City:</label>
-                                    <input type="text" name="city" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label for="email">Country:</label>
-                                    <input type="text" name="country" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label for="email">Email:</label>
-                                    <input type="email" name="email" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col">
-                                    <label for="email">Phone number 1:</label>
-                                    <input type="text" name="phone1" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label for="email">Phone number 2:</label>
-                                    <input type="text" name="phone1" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label for="email">TIN number:</label>
-                                    <input type="text" name="tinNum" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col">
-                                    <label for="email">FAX:</label>
-                                    <input type="text" name="fax" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label for="email">Mobile number:</label>
-                                    <input type="text" name="mobile_num" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col">
-                                    <label for="email">Contact Person:</label>
-                                    <input type="text" name="contact_person" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label for="email">Website:</label>
-                                    <input type="text" name="website" class="form-control">
-                                </div>
-                            </div>
-                        </div>
+                        @include('vendors.vendors.forms.addVendorModal')
                         <div class="modal-footer">					
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             <input type="submit" class="btn btn-success" id="submit">
