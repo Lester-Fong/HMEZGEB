@@ -40,6 +40,7 @@
                 <option value="#" selected disabled hidden>Choose...</option>
                 <option value="#">Cash Bill</option>
                 <option value="#">Credit Bill</option>
+                <option value="#">Other</option>
                 </select>
             <label for="email" class="col-form-label col-lg-2">Attachment:</label>
             <div class="input-group col-md-2 col-lg-4">
